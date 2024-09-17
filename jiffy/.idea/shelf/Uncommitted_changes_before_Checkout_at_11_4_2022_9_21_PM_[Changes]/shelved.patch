@@ -1,0 +1,13 @@
+Index: server/models/order.js
+===================================================================
+diff --git a/server/models/order.js b/server/models/order.js
+--- a/server/models/order.js	
++++ b/server/models/order.js	
+@@ -5,6 +5,7 @@
+     CustomerID: { type: String },
+     Status: { type: String },
+     Date:{type: Date, default: Date.now},
++    PaymentStatus:{type:String},
+     DelevaryStatus: { type: String },
+     Reciever_Name: { type: String },
+     Shpiing_Address: { type: String },
